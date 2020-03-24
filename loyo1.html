@@ -24,5 +24,39 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    <table class = "table table-bordered">
+      
+      <thead>  <!-- thead = header content (similar concept to html head and body) -->
+        <tr>   <!-- tr tags define a row in a table -->
+          <th scope = "col">Col 1 Header</th> <!-- th tags are basically a heading/title cell and bolds the text inside-->
+          <th scope = "col">Col 2 Header</th>
+          <th scope = "col">Col 3 Header</th>
+          <th scope = "col">Col 4 Header</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope = "row">Row 1</th>
+          <td>Empty Cell</td>   <!-- defines a "standard cell" in a table (text is not bolded) -->
+          <td>Col 1 Row 1</td>
+          <td></td>
+        </tr>
+        <tr>
+          <th scope = "row">Row 2</th>
+                                          <!-- row stays empty unless td tag is added -->
+        </tr>
+        <tr>
+          <th scope = "row">Row 3</th>
+          <td colspan = "2">Longer Cell</td>   <!-- colspan is how many columns a cell takes up -->
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+      
+    </table>
+    
+    
+    
   </body>
 </html>
