@@ -27,10 +27,18 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     
     <!-- Initializes the popovers on the screen -->
-    <script>$(function () {
+    <script>
+     $(function () {
       $('[data-toggle="popover"]').popover()
      })
      </script>
+     
+     <!-- Initializes the toast messages -->
+    <script>
+      $(document).ready(function(){
+        $('.toast').toast('show');
+      });
+    </script>
     
   <div class = "text-center">
     <button type = "button" class = "btn btn-sm btn-primary" data-container = "body" data-toggle = "popover" data-placement = "right" data-content = "This is what I did today.">
@@ -58,7 +66,19 @@
     </button>
   </div>
     
+  <br></br>
     
+  <div class = "toast m-auto" data-autohide = "false">
+    <div class = "toast-header">
+      <strong class = " mr-auto text-success">Basically the title...</strong>
+      <small class = "m-auto text-body">No need for the time....</small>
+      <button type = "button" class = "m-auto close" data-toggle = "popover" data-placement = "right" data-trigger = "hover" data-content = "In case you didn't know, this is a close button" data-dismiss = "toast">x</button>
+    </div>
+    
+    <div class = "toast-body>">
+      <p>This is text inside a toast msg.</p>
+    </div>
+  </div>
     
   </body>
 </html>
